@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s, height 4s;
+            text-align: right;
+            padding: 10px;
+        }
+
+        div:hover {
+            width: 300px;
+            height: 300px;
+        }
+
+
+        div>span {
+            opacity: 0;
+            position: relative;
+            top: 280px;
+
+
+        }
+
+        div:hover>span {
+            opacity: 1;
+            transition: .2s;
+            transition-delay: 0s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The transition Property</h1>
+
+    <p>Hover over the div element below, to see the transition effect:</p>
+
+    <div><span>Ceci est un test</span></div>
+
+</body>
+
+</html>
